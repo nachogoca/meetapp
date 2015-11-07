@@ -3,29 +3,29 @@ package controllers;
 import play.*;
 import play.mvc.*;
 
-public DataBaseRequester extends Controller {
-    public DataBaseRequester() {
+public class DataBaseRequester extends Controller {
+
+    public static ArrayList<Event> eventList(int userID) {
+        ArrayList<Event> listOfEvents;
+
+
+        return ok(play.libs.Json.toJson(listOfEvents));
+    }
+
+    public static Event eventProfile(int userID, int eventID) {
 
     }
 
-    public static ArrayList<Event> EventList(int userID) {
+    public static User userProfile(int userID) {
 
     }
 
-    public static Event EventProfile(int userID, int eventID) {
+    public static Place placeProfile(int userID, int placeID) {
 
     }
 
-    public static User UserProfile(int userID) {
+    public static Comment eventComments(int userID, int eventID) {
 
-    }
-
-    public static Place PlaceProfile(int userID, int placeID) {
-
-    }
-
-    public static Comment EventComments(int userID, int eventID) {
-        
     }
 
 }
