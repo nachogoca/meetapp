@@ -18,6 +18,11 @@ public class Application extends Controller {
     	return ok("otra cosa prueba");
     }
 
+    public Result testParameters(String UserID)
+    {
+        return ok(test.render(UserID));
+    }
+
     public Result fetchEvents()
     {
     	return ok("Events");
