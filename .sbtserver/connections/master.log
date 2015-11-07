@@ -5,3 +5,9 @@ New client attempting to connect on port: 34817-38585
 This client on port 34817 has uuid ef71bde3-e722-4534-ae00-3f4bb7a757f3 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
 Connected Clients: play-fork-run-ef71bde3-e722-4534-ae00-3f4bb7a757f3
 Taking next connection to: 38585
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 38585
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 38585
