@@ -5,11 +5,11 @@
 # Home page
 GET     /                                           controllers.Application.index()
 
-GET     get/events/list/:userID                     controllers.DataBaseRequester.eventList(userID : int)
-GET     get/events/profile/:userID/:eventID         controllers.DataBaseRequester.eventProfile(userID:int, eventID:int)
-GET     get/users/profile/:userID                   controllers.DataBaseRequester.userProfile(userID: int)
-GET     get/places/profile/:userID/:placeID          controllers.DataBaseRequester.placeProfile(userID:int, placeID:int)
-GET     get/events/comments/:userID/:eventID        controllers.DataBaseRequester.eventComments(userID:int, placeID:int)
+GET     /get/events/list/:userID                     controllers.DataBaseRequester.eventList(userID : Integer)
+GET     /get/events/profile/:userID/:eventID         controllers.DataBaseRequester.eventProfile(userID:Integer, eventID:Integer)
+GET     /get/users/profile/:userID                   controllers.DataBaseRequester.userProfile(userID: Integer)
+GET     /get/places/profile/:userID/:placeID          controllers.DataBaseRequester.placeProfile(userID:Integer, placeID:Integer)
+GET     /get/events/comments/:userID/:eventID        controllers.DataBaseRequester.eventComments(userID:Integer, eventID:Integer)
 
 
 
