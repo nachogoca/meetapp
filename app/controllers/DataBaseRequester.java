@@ -3,6 +3,8 @@ package controllers;
 import play.*;
 import play.mvc.*;
 
+import java.util.ArrayList;
+
 public class DataBaseRequester extends Controller {
 
     public static ArrayList<Event> eventList(int userID) {
