@@ -5,10 +5,16 @@ import play.mvc.*;
 import java.util.ArrayList;
 import models.*;
 
+import play.db.*;
+
 public class DataBaseRequester extends Controller {
 
     public Result eventList(int userID) {
         ArrayList<Event> listOfEvents = new ArrayList<Event>();
+
+
+
+
         return ok(play.libs.Json.toJson(listOfEvents));
     }
 
