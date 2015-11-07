@@ -3,7 +3,29 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
+GET     /                                           controllers.Application.index()
+
+GET     get/events/list/:userID                     controllers.DataBaseRequester.eventList(userID : int)
+GET     get/events/profile/:userID/:eventID         controllers.DataBaseRequester.eventProfile(userID:int, eventID:int)
+GET     get/users/profile/:userID                   controllers.DataBaseRequester.userProfile(userID: int)
+GET     get/places/profile/:userID/:placeID          controllers.DataBaseRequester.placeProfile(userID:int, placeID:int)
+GET     get/events/comments/:userID/:eventID        controllers.DataBaseRequester.eventComments(userID:int, placeID:int)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
