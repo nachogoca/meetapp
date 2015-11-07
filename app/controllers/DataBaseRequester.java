@@ -8,27 +8,27 @@ import models.*;
 public class DataBaseRequester extends Controller {
 
     public Result eventList(int userID) {
-        ArrayList<Event> listOfEvents = null;
+        ArrayList<Event> listOfEvents = new ArrayList<Event>();
         return ok(play.libs.Json.toJson(listOfEvents));
     }
 
     public Result eventProfile(int userID, int eventID) {
-        Event eventFetched = null;
+        Event eventFetched = new Event();
         return ok(play.libs.Json.toJson(eventFetched));
     }
 
     public Result userProfile(int userID) {
-        User userFetched = null;
+        User userFetched = new User();
         return ok(play.libs.Json.toJson(userFetched));
     }
 
     public Result placeProfile(int userID, int placeID) {
-        Place placeFetched = null;
+        Place placeFetched = new Place();
         return ok(play.libs.Json.toJson(placeFetched));
     }
 
     public Result eventComments(int userID, int eventID) {
-        ArrayList<Comment> commentsFetched = null;
+        ArrayList<Comment> commentsFetched = new ArrayList<Comment>();
 
         return ok(play.libs.Json.toJson(commentsFetched));
     }

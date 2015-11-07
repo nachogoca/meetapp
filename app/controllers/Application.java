@@ -11,4 +11,11 @@ public class Application extends Controller {
         return ok(index.render("Puto el que lo lea"));
     }
 
+    public Result testParameters(String userID) {
+        return ok(newIndex.render(userID));
+    }
+
+
+
+
 }
