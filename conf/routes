@@ -7,9 +7,11 @@ GET     /                           controllers.Application.index()
 
 GET		/hello						controllers.Application.helloTest()
 
-GET     /events/:UserID             controllers.Application.testParameters(UserID: String)
+#GET     /events/:UserID             controllers.Application.testParameters(UserID: String)
 
 GET 	/events						controllers.Application.fetchEvents()
+
+
 
 
 
