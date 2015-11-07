@@ -4,6 +4,7 @@ import play.*;
 import play.mvc.*;
 
 import java.util.ArrayList;
+import models.*;
 
 public class DataBaseRequester extends Controller {
 
