@@ -16,7 +16,7 @@ public class DataBaseRequester extends Controller {
         String sqlQuery = "SELECT * FROM Events";
         Connection connection = DB.getConnection();
 
-        try{
+        try {
             Statement sqlStatement = connection.createStatement();
 
             ResultSet result = sqlStatement.executeQuery(sqlQuery);
