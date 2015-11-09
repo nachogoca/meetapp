@@ -26,7 +26,7 @@ public class MeetAppLogger {
 
     public static void setMode(LoggerMode mode) {
         synchronized(MeetAppLogger.class) {
-            //this.mode = mode;
+            MeetAppLogger.mode = mode;
         }
     }
 
