@@ -16,7 +16,7 @@ GET     /get/events/comments/:userID/:eventID        controllers.DataBaseRequest
 
 
 
-
+GET    /post/event/new                              controllers.DataBasePoster.eventProfile()
 
 
 

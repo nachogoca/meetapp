@@ -13,7 +13,7 @@ public class DataBasePoster extends Controller{
 
     }
 
-    public Result eventProfile() {
+    public Result eventProfile() { 
         Event newEventProfile = new Event();
         Event serializedEvent = Json.fromJson(request().body().asJson(), Event.class);
 
