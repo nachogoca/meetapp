@@ -1,13 +1,7 @@
 package utils.Logger;
 
 import java.util.Scanner;
-
-public enum LoggerMode {
-    DEFAULT,
-    CONSOLE_OFF,
-    FILE_OFF
-}
-
+import java.util.ArrayList;
 
 public class MeetAppLogger {
 
@@ -20,13 +14,19 @@ public class MeetAppLogger {
 
     private static ArrayList<Loggable> subscribedObjects;
 
+    public enum LoggerMode {
+        DEFAULT,
+        CONSOLE_OFF,
+        FILE_OFF
+    }
+
     public MeetAppLogger() {
         subscribedObjects = new ArrayList<Loggable>();
     }
 
     public static void setMode(LoggerMode mode) {
         synchronized(MeetAppLogger.class) {
-            this.mode = mode;
+            //this.mode = mode;
         }
     }
 

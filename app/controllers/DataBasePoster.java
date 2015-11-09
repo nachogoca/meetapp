@@ -14,8 +14,7 @@ public class DataBasePoster extends Controller{
 
     public Result eventProfile() {
         Event newEventProfile = new Event();
-
-
+        return ok();
     }
 
 

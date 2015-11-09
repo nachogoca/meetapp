@@ -13,23 +13,6 @@ public class DataBaseRequester extends Controller {
     public Result eventList(int userID) {
         ArrayList<Event> listOfEvents = new ArrayList<Event>();
 
-        String sqlQuery = "SELECT * FROM Events";
-        Connection connection = DB.getConnection();
-
-        try {
-            Statement sqlStatement = connection.createStatement();
-
-            ResultSet result = sqlStatement.executeQuery(sqlQuery);
-
-            while(result.next()){
-                String coffeeName = result.getString("COL_TILE");
-                int supplierID = result.getInt("COL_TITLE");
-            }
-        }
-        catch(SQLException e) {
-
-        }
-
         return ok(play.libs.Json.toJson(listOfEvents));
     }
 

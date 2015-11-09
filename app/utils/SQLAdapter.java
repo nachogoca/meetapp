@@ -5,14 +5,9 @@ import java.sql.*;
 
 public class SQLAdapter {
 
-    Connection connection;
+    //Connection connection;
 
     public SQLAdapter() {
-        try {
 
-        }
-        catch(Exception ex) {
-
-        }
     }
 }
