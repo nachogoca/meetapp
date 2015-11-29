@@ -55,14 +55,14 @@ BEGIN
 		END
 
 
-	COMMIT TRANSACTION [TranPlace]
+	COMMIT TRANSACTION [TranEvent]
 
 	-- If an error occurs in transaction
 	END TRY
 	BEGIN CATCH
-	  ROLLBACK TRANSACTION [TranPlace]
+	  ROLLBACK TRANSACTION [TranEvent]
 	END CATCH  
 
 END
 
-EXECUTE PUT_EVENT_PROFILE_TEST_2 2, 1, 'Event PUT_EVENT_PROFILE_TEST_2', 'Description PUT_EVENT_PROFILE_TEST_2', '2015-11-29', 'Public'
+EXECUTE PUT_EVENT_PROFILE_TEST_2 2, 1, 'Event ', 'Description ', '2015-11-29', 'Public'

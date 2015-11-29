@@ -1,0 +1,2 @@
+--PUT_EVENT_ATTENDANCE
+-- Arguments: IDEvent, FacebookID
