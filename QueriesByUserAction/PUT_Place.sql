@@ -2,7 +2,7 @@
 -- Arguments: IDLocation, IDCategory, Name, Description
 -- Returns: LocationID
 
-CREATE PROCEDURE PUT_PLACE_TEST
+CREATE PROCEDURE PUT_PLACE
 (@IDLocation	int,
 @IDCategory		int,			-- 1 <= IDCategory <= 6
 @Name			varchar(50),
@@ -30,4 +30,4 @@ BEGIN
 
 END
 
-EXECUTE PUT_PLACE_TEST 1, 2, 'Name_test_1', 'description_test_1'
+EXECUTE PUT_PLACE 1, 2, 'PlaceName', 'PLaceDescription'
