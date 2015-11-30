@@ -1,10 +1,10 @@
 -- PUT_EVENT_PROFILE
---	FacebookIDCreator varchar(50), EventName varchar(50), EventDescription varchar(50), 
---	EventDateTime datetime, Visibility varchar(50), PlaceID int
+--	, PlaceID int, FacebookIDCreator varchar(50), EventName varchar(50), EventDescription varchar(50), 
+--	EventDateTime datetime, Visibility varchar(50)
 
-CREATE PROCEDURE PUT_EVENT_PROFILE_TEST_2
+CREATE PROCEDURE PUT_EVENT_PROFILE
 (@IDPlace			int,
-@IDCreatorUser		int,
+@FacebookID	varchar(50),
 @Name			varchar(50),
 @Description	varchar(500),
 @DateTime		datetime,
@@ -25,6 +25,10 @@ BEGIN
 
 	BEGIN TRY
 			
+		-- Obtain IDUser
+		DECLARE @IDCreatorUser int
+		SET @IDCreatorUser = (SELECT M.IDUser FROM MA_User AS M WHERE M.FacebookID = @FacebookID)
+
 		-- Create new event
 		INSERT INTO Event(IDPlace, IDUser, Name, Description, DateTime, Visibility)
 		VALUES (@IDPlace, @IDCreatorUser, @Name, @Description, @DateTime, @Visibility)
@@ -65,4 +69,4 @@ BEGIN
 
 END
 
-EXECUTE PUT_EVENT_PROFILE_TEST_2 2, 1, 'Event ', 'Description ', '2015-11-29', 'Public'
+--EXECUTE PUT_EVENT_PROFILE 3, 'JPE40NAY7LV', 'Event ', 'Description ', '2015-11-29', 'Public'
